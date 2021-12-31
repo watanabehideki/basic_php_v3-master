@@ -1,4 +1,15 @@
-<?php $message =  'こんにちわ！' . date('l'); ?>
+<?php
+
+  $n = mt_rand(1, 3); //１以上3未満のランダムな数
+
+  if ($n === 1) {
+    $message = 'UI/UXデザイナー見習いです。';
+  } elseif ($n === 2) {
+    $message = 'プログラミング勉強中です。';
+  } else {
+    $message = 'PHPちょっとわかります。';
+  }
+?>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -17,7 +28,7 @@
       </div>
       <div class="info">
         <h1>山田太郎</h1>
-        <p><?= $message; ?></p>
+        <p><?= htmlspecialchars($message, ENT_QUOTES, 'UTF-8'); ?></p>
         <ul>
           <li>
             <a href="https://dotinstall.com" target="_blank">
@@ -40,18 +51,21 @@
       <img src="img/work1.png" width="400" height="260" alt="勇者ゲームの紹介画像">
       <h1>勇者ゲーム</h1>
       <p>楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。</p>
+      <a href="hero.php">もっと見る</a>
     </section>
 
     <section>
       <img src="img/work2.png" width="400" height="260" alt="宝探しゲームの紹介画像">
       <h1>宝探しゲーム</h1>
       <p>楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。</p>
+      <a href="treasure.php">もっと見る</a>
     </section>
 
     <section>
       <img src="img/work3.png" width="400" height="260" alt="神経衰弱の紹介画像">
       <h1>神経衰弱</h1>
       <p>楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。</p>
+      <a href="memory.php">もっと見る</a>
     </section>
 
   </section>
