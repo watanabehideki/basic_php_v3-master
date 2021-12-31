@@ -1,3 +1,5 @@
+<?php $message =  'こんにちわ！' . date('l'); ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -15,7 +17,7 @@
       </div>
       <div class="info">
         <h1>山田太郎</h1>
-        <p>UI/UXデザイナー見習いです</p>
+        <p><?= $message; ?></p>
         <ul>
           <li>
             <a href="https://dotinstall.com" target="_blank">
@@ -39,13 +41,13 @@
       <h1>勇者ゲーム</h1>
       <p>楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。</p>
     </section>
-  
+
     <section>
       <img src="img/work2.png" width="400" height="260" alt="宝探しゲームの紹介画像">
       <h1>宝探しゲーム</h1>
       <p>楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。</p>
     </section>
-  
+
     <section>
       <img src="img/work3.png" width="400" height="260" alt="神経衰弱の紹介画像">
       <h1>神経衰弱</h1>
@@ -59,4 +61,3 @@
   </footer>
 </body>
 </html>
-  
